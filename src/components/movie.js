@@ -13,7 +13,7 @@ function Movie(props) {
     console.log(title);
     const dispatch = useDispatch();
     if (selectedMovie == null) {
-        dispatch(fetchMovie(movieId));
+        dispatch(fetchMovie(title));
     }
 
     return (<MovieDetail title={title} />)
